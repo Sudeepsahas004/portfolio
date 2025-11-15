@@ -1,0 +1,164 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@300&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+    .navbar{
+    height: 100px;
+    width:100vw;
+    max-width:80rem;
+    color:white;
+    margin:0 auto;
+    padding:1rem 2rem;
+    display:flex;
+    justify-content:space-between;
+    /* align-items:center; */
+    /* border:white 2px solid; */
+    position:sticky;
+    top:0;
+    z-index:3;
+    background-color:rgb(30, 30, 30);
+    }
+    .logo{
+
+    height:4rem;
+    width:5rem;
+    }
+
+    .desktopMenuListItem{
+        position:relative;
+        top:18px;
+        margin:1.5rem;
+        color:white;
+        font-size:1.33rem;
+        
+    }
+    .desktopMenuListItem:hover{
+        color:#6dd78fff;
+        padding-bottom:0.5rem;
+        border-bottom:3px solid #6dd78fff
+
+    }
+    .desktopMenuBtn{
+        position:relative;
+        top:10px;
+        gap: 0px;
+        background-color:white;
+        height:50px;
+        width:170px;
+        color:black;
+        border:none;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        /* padding:0 2rem;
+        padding-right:3rem; */
+        border-radius:2rem;
+        
+        
+        cursor:pointer;
+    }
+
+    .desktopMenuImg{
+        object-fit:cover;
+        height:1.3rem;
+        width:1.3rem;
+        margin:6px;
+    }
+    .contact{
+        font-family: "Open Sans", sans-serif;
+        padding-left:0.5px;
+        font-size:17px;
+        font-weight:550;
+    }
+
+ /* Hamburger (hidden on desktop) */
+.hamburgerIcon {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Mobile Menu (hidden by default) */
+.mobileMenu {
+  position: fixed;
+  top: 100px;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background: #2c3e50;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  align-items: center;
+  gap: 2rem;
+  transition: .4s ease;
+}
+
+.mobileMenu.active {
+  right: 0;
+  top:0px;
+padding:140px 0;
+}
+
+.mobileMenu a {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.mobileContactBtn {
+font-family: "Open Sans", sans-serif;
+  background: white;
+  padding: .8rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  border:none;
+  display:flex;
+  justify-content:center;
+  color: black;
+  font-weight:530;
+}
+
+.mobileContactImg {
+  width: 1.5rem;
+  margin-right: .5rem;
+}
+
+/* =======================================
+   ✅ ✅ TABLET 768px – 1114px
+======================================= */
+
+@media (max-width: 1114px) and (min-width: 768px) {
+  .desktopMenuListItem {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    width: 70px;
+  }
+}
+
+/* =======================================
+   ✅ ✅ MOBILE ≤ 768px 
+======================================= */
+
+@media (max-width: 768px) {
+  
+  /* ✅ Hide desktop items */
+  .desktopMenu,
+  .desktopMenuBtn {
+    display: none;
+  }
+
+  /* ✅ Show hamburger */
+  .hamburgerIcon {
+    display: block;
+  }
+
+  .logo {
+    height:40px;
+    width: 55px;
+  }
+  .navbar{
+     height:60px
+  }
+}
+

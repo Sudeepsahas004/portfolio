@@ -1,0 +1,138 @@
+/* ---------- Container ---------- */
+.contactPage {
+  max-width:80rem;
+  margin: 5rem auto;
+  padding: 1rem;
+}
+
+/* ---------- Title ---------- */
+.contactPageTitle {
+  font-size: 2.7rem;
+  font-weight: 800;
+  
+  margin-bottom: 1rem;
+  margin-left:2rem;
+}
+
+/* ---------- Description ---------- */
+.contactDescription {
+    display:block;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0 auto 1.5rem;
+  max-width: 90%;
+}
+
+/* ---------- Form ---------- */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Inputs + Textarea */
+.name,
+.email,
+.msg {
+  width: 100%;
+  max-width: 800px;
+  padding: 1.2rem 1rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: white;
+  background: rgb(40,40,40);
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  font-family: "Open Sans", sans-serif;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Placeholder */
+.name::placeholder,
+.email::placeholder,
+.msg::placeholder {
+  font-size: 1rem;
+  color: rgb(160,160,160);
+}
+
+/* Focus Glow */
+.name:focus,
+.email:focus,
+.msg:focus {
+  outline: none;
+  border: 2px solid #29924aff;
+  box-shadow: 0 0 15px #29924aff;
+}
+
+/* ---------- Submit Button ---------- */
+.submitBtn {
+  background: #29924aff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: "Open Sans", "Stack Sans Text";
+}
+
+.submitBtn:hover {
+  background: #14724bff;
+}
+
+/* ---------- Social Links ---------- */
+.links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.link {
+  width: 55px;
+  height: 55px;
+  margin: 0.5rem;
+}
+
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  .contactPage {
+    margin: 2rem auto;
+    margin-top:5rem;
+    margin-bottom:4rem;
+    padding: 0.5rem;
+  }
+
+  .contactPageTitle {
+    font-size: 2.2rem;
+    margin-bottom:10px;
+  }
+
+  .contactDescription {
+    font-size: 1rem;
+    max-width: 83%;
+     margin-bottom:10px;
+  }
+.links{
+    margin-top:1.5rem;
+}
+  .link {
+    width: 45px;
+    height: 45px;
+    
+  }
+  .contactForm{
+    max-width:75%;
+    margin:auto;
+    margin-bottom:1px;
+  }
+  .name,
+.email,
+.msg{
+    margin:0.5rem 0;
+}
+}

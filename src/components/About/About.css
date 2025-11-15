@@ -1,0 +1,84 @@
+.aboutSection {
+  /* padding:100px; */
+  width: 100%;
+  /* height:500px; */
+  
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  padding-bottom:100px;
+  padding-top:100px; 
+  color:white;
+  
+}
+
+.aboutIntro {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+ 
+  font-weight: 600;
+}
+
+.aboutTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.aboutDescription {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.aboutQuote {
+  font-style: italic;
+  margin: 1.5rem 0;
+ 
+  border-left: 4px solid #6dd78f;
+  padding-left: 0.5rem;
+}
+
+.aboutDetails {
+  margin: 1.5rem 0;
+  
+}
+
+.aboutDetails p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.aboutInterests {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.aboutInterests span {
+    background:white;
+  margin:2px; 
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight:600;
+  color:black
+}
+
+
+@media (max-width: 768px){
+    .aboutSection{
+        padding-top:60px;
+    }
+    /* .aboutQuote{
+        margin:0.5rem 0;
+        margin-bottom:30px;
+    } */
+   .aboutInterests span:first-child {
+  /* margin-right: 8px; increase as you like */
+  padding-right:23px;
+}
+  
+}
