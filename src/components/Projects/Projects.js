@@ -4,22 +4,28 @@ import "./Projects.css";
 const Projects = () => {
   const projects = [
     {
-      title: "Banking System (ASP.NET MVC)",
+      title: "Cinemate",
       description:
-        "A secure online banking app with user authentication, credit/debit operations, and transaction history management.",
-      link: "https://yourbankingprojectlink.com",
+        "A movie browsing web app that displays trending, popular, and top-rated movies with detailed information like ratings, genres, and trailers.",
+      link: "https://sahasmatee.netlify.app/",
     },
     {
-      title: "Buttercup Events (ASP.NET Core)",
+      title: "SahasAdidas",
       description:
-        "An event management web app for art exhibitions — built with ASP.NET Core, featuring attendee registration and admin controls.",
-      link: "https://yourbuttercupeventslink.com",
+        "An e-commerce web application inspired by Adidas, featuring product listings, category filtering, add-to-cart functionality, and a modern UI.",
+      link: "https://sahasadidas.netlify.app/",
     },
     {
-      title: "Portfolio Website (React)",
+      title: "Luxury Cars",
       description:
-        "My personal portfolio showcasing projects, skills, and contact information with smooth scrolling and responsive design.",
-      link: "https://yourportfolio.com",
+        "A showcase website for luxury cars displaying premium brands, specifications, pricing details, and high-quality visuals for car enthusiasts.",
+      link: "https://sahasluxurycars.netlify.app/",
+    },
+    {
+      title: "Todo List",
+      description:
+        "A simple and efficient task management application that allows users to add, update, mark complete, and delete daily tasks.",
+      link: "https://sahastodolist.netlify.app/",
     },
   ];
 
@@ -39,7 +45,7 @@ const Projects = () => {
               rel="noopener noreferrer"
               className="projectBtn"
             >
-               <button>Click to See Page</button>
+              <button>Click to See Page</button>
             </a>
           </div>
         ))}

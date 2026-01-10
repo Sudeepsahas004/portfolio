@@ -1,6 +1,6 @@
 #intro{
     height:590px;
-    width:100vw;
+    width:80vw;
     max-width:80rem;
     position:relative;
     margin:0 auto;
@@ -24,12 +24,13 @@
     left:10px;
     padding:2rem;
     /* padding-right: 45%; */
+    gap:1rem;
     font-size:3rem;
     font-weight:700;
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    flex-wrap:wrap
+    /* justify-content:center; */
+    /* flex-wrap:wrap */
 
 }
 .hello{
@@ -46,7 +47,8 @@
 .hire{
     object-fit:cover;
     height:1.5rem;
-   
+    
+
     /* margin:0.45rem 0.4rem; */
 }
 .btn{
@@ -57,7 +59,7 @@
     border-radius:2rem;
     display:flex;
     align-items:center;
-
+  cursor:pointer;
 
 }
 .hireMe{
@@ -80,6 +82,7 @@ top:0px;
     position: relative;     /* ✅ remove absolute */
     top: 20px;
     left: 0;
+    gap:0rem;
     padding-right: 45%;     /* ✅ leave space for image */
     text-align: left;
   }
@@ -96,7 +99,7 @@ top:0px;
 @media (max-width: 768px) {
   #intro{
         position:relative;
-        top:-23px;
+        top:-50px;
     }
 
 
@@ -164,3 +167,5 @@ top:0px;
     font-size: 0.95rem;
   }
 }
+
+

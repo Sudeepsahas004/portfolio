@@ -2,6 +2,7 @@ import "./intro.css";
 import React from "react";
 import profile from "../../assets/Profile.png";
 import hireImg from "../../assets/Hire me.png";
+import { Link } from "react-scroll";
 
 const Intro = () => {
   return (
@@ -19,12 +20,15 @@ const Intro = () => {
             <br />
             responsive websites, creating smooth user experiences.
           </span>
-          <a href="/" className="hireBtn">
+          <Link to="contact"
+        smooth={true}
+        offset={-80}
+        duration={100} className="hireBtn">
             <button className="btn">
               <img src={hireImg} className="hire" alt="" />
               <span className="hireMe">Hire Me</span>
             </button>
-          </a>
+          </Link>
         </div>
      
           <img src={profile} alt="Profile" className="bg" />

@@ -3,6 +3,7 @@
   max-width:80rem;
   margin: 5rem auto;
   padding: 1rem;
+  margin-bottom:0px;
 }
 
 /* ---------- Title ---------- */
@@ -50,12 +51,12 @@
 }
 
 /* Placeholder */
-.name::placeholder,
+/* .name::placeholder,
 .email::placeholder,
 .msg::placeholder {
   font-size: 1rem;
   color: rgb(160,160,160);
-}
+} */
 
 /* Focus Glow */
 .name:focus,
@@ -103,7 +104,7 @@
   .contactPage {
     margin: 2rem auto;
     margin-top:5rem;
-    margin-bottom:4rem;
+    margin-bottom:0.5rem;
     padding: 0.5rem;
   }
 

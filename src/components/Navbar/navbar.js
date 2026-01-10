@@ -9,16 +9,16 @@ import { useEffect } from "react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-  const handleResize = () => {
-    if (window.innerWidth > 768) {
-      setOpen(false);   // Close mobile menu on desktop
-    }
-  };
+    useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setOpen(false);   // Close mobile menu on desktop
+      }
+    };
 
-  window.addEventListener("resize", handleResize);
-  return () => window.removeEventListener("resize", handleResize);
-}, []);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 
   return (
@@ -31,7 +31,7 @@ const Navbar = () => {
           smooth={true}
           offset={-200}
           duration={100}
-          className="desktopMenuListItem"
+          className="desktopMenuListItem navItem"
         >
           Home
         </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
           smooth={true}
           offset={-60}
           duration={100}
-          className="desktopMenuListItem"
+          className="desktopMenuListItem navItem"
         >
           About
         </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
           smooth={true}
           offset={-100}
           duration={100}
-          className="desktopMenuListItem"
+          className="desktopMenuListItem navItem"
         >
           Skills
         </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
           smooth={true}
           offset={-100}
           duration={100}
-          className="desktopMenuListItem"
+          className="desktopMenuListItem navItem"
         >
           Projects
         </Link>
@@ -91,33 +91,44 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={open ? "mobileMenu active" : "mobileMenu"}>
+        <span onClick={()=>setOpen(false)} className="closeButton">X</span>
         <Link to="intro"
           spy={true}
           smooth={true}
           offset={-500}
-          duration={500} onClick={() => setOpen(false)}>
+          duration={500} 
+          className="navItem"
+           onClick={() => setOpen(false)}>
           Home
         </Link>
         <Link  to="about"
           spy={true}
           smooth={true}
           offset={-30}
-          duration={500} onClick={() => setOpen(false)}>
+          duration={500} 
+          className="navItem"
+          onClick={() => setOpen(false)}>
           About
         </Link>
         <Link to="skills"
           spy={true}
           smooth={true}
           offset={-70}
-          duration={500} onClick={() => setOpen(false)}>
+          duration={500}
+          className="navItem" onClick={() => setOpen(false)}>
           Skills
         </Link>
+        
         <Link to="projects"
           spy={true}
           smooth={true}
           offset={-70}
-          duration={100} onClick={() => setOpen(false)}>
+          duration={100}
+          className="navItem"
+           onClick={() => setOpen(false)}>
+            <button>
           Projects
+          </button>
         </Link>
 
              
@@ -126,7 +137,7 @@ const Navbar = () => {
         smooth={true}
         offset={-60}
         duration={300}
-        
+        className="navItem"
       >
         <button className="mobileContactBtn" onClick={() => setOpen(false)}>
           <img src={contact} alt="contact" className="mobileContactImg" />

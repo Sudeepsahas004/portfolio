@@ -28,7 +28,7 @@ const About = () => {
         <p><strong>Name:</strong> Sudeep Sahas</p>
         <p><strong>Date of birth:</strong> 27-February-2003</p>
         <p><strong>Address:</strong> Vijayawada, Andhra Pradesh, India</p>
-        <p><strong>Email:</strong> sudeepsahas004@example.com</p>
+        <p><strong>Email:</strong> sudeepsahas004@gmail.com</p>
         <p><strong>Phone:</strong> +91 9494055409</p>
       </div>
 

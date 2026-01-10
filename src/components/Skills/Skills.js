@@ -21,7 +21,6 @@ const Skills = () => {
       <div className="cards ">
         <div className="card">
           <div className="box htmlBox">
-            
               <img className="cardImage Html" src={Html} alt="sd" />
               <span className="cardText">95%</span>
             
