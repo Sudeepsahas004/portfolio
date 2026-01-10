@@ -97,7 +97,7 @@ const Navbar = () => {
           smooth={true}
           offset={-500}
           duration={500} 
-          className="navItem"
+          className="navItem mobileNavItem"
            onClick={() => setOpen(false)}>
           Home
         </Link>
@@ -106,7 +106,7 @@ const Navbar = () => {
           smooth={true}
           offset={-30}
           duration={500} 
-          className="navItem"
+          className="navItem mobileNavItem"
           onClick={() => setOpen(false)}>
           About
         </Link>
@@ -115,7 +115,7 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={500}
-          className="navItem" onClick={() => setOpen(false)}>
+          className="navItem mobileNavItem" onClick={() => setOpen(false)}>
           Skills
         </Link>
         
@@ -124,7 +124,7 @@ const Navbar = () => {
           smooth={true}
           offset={-70}
           duration={100}
-          className="navItem"
+          className="navItem mobileNavItem"
            onClick={() => setOpen(false)}>
             
           Projects
@@ -137,7 +137,7 @@ const Navbar = () => {
         smooth={true}
         offset={-60}
         duration={300}
-        className="navItem"
+       
       >
         <button className="mobileContactBtn" onClick={() => setOpen(false)}>
           <img src={contact} alt="contact" className="mobileContactImg" />
