@@ -126,9 +126,9 @@ const Navbar = () => {
           duration={100}
           className="navItem"
            onClick={() => setOpen(false)}>
-            <button>
+            
           Projects
-          </button>
+          
         </Link>
 
              
