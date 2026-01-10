@@ -172,6 +172,11 @@
   font-weight: 750;
 }
 
+
+.navItem{
+  cursor: pointer;
+}
+
 .mobileNavItem {
   cursor: pointer;
   background: #6dd78fff;
